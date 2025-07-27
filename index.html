@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <meta name="description" content="Personal portfolio website." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1> Mark B</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>This is a Porfolio to showcase my recent projects.</p>
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <strong>Project 1:</strong> Midnight tuners.
+          <button onclick="toggleDetails('proj1')">Details</button>
+          <div id="proj1" class="project-details" style="display:none;">
+            <p>More info about Midnight tuners...</p>
+          </div>
+        </li>
+        <li>
+          <strong>Project 2:</strong> Portfolio website
+          <button onclick="toggleDetails('proj2')">Details</button>
+          <div id="proj2" class="project-details" style="display:none;">
+            <p>More info about Portfolio website...</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:portfolio.email@yahoo.com.com">portfolio.email@yahoo.com</a></p>
+      <p>LinkedIn: <a href="#">LinkedIn Profile</a></p>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill-list"></div>
+        <span title="HTML"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="skill-icon"></span>
+        <span title="CSS"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="skill-icon"></span>
+        <span title="JavaScript"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="skill-icon"></span>
+        <span title="GitHub"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="skill-icon"></span>
+    <span title="GitLab"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" alt="GitLab" class="skill-icon"></span>
+    </section>
+
+
+  </main>
+  <footer>
+    <p>&copy; 2024 Mark B</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html> 
